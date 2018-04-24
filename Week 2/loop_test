@@ -1,9 +1,0 @@
-'use strict';
-
-console.log('BEFORE LOOP');
-
-for (let i = 0; i < 5; i++) {
-    console.log('INSIDE loop', i - 1);
-}
-
-console.log('AFTER LOOP');
