@@ -1,6 +1,6 @@
 'use strict';
 
-let favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
+const favoriteAnimals = ['blowfish', 'capricorn', 'giraffe'];
 
 favoriteAnimals.push('turtle');
 

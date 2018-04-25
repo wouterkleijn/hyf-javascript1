@@ -22,14 +22,14 @@ for (let i = 0; i < months.length; i++) {
 let sum = 0;
 
 for (let i = 0; i < months.length; i++) {
-sum = sum + months[i].days;
-  }
-  
-console.log(sum);   
+  sum = sum + months[i].days;
+}
 
-if (sum == 365) {
-    console.log('Yep, it adds up to 365');
-} else { 
-    console.log('Oh no! It doesn\'t add up to 365!');
+console.log(sum);
+
+if (sum === 365) {
+  console.log('Yep, it adds up to 365');
+} else {
+  console.log('Oh no! It doesn\'t add up to 365!');
 }
 
