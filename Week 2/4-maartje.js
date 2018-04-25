@@ -1,3 +1,4 @@
+'use strict';
 const monday = [
     {
       name: 'Write a summary HTML/CSS',
@@ -17,7 +18,7 @@ const monday = [
     }
   ];
   
-  const tuesday = [
+const tuesday = [
     {
       name: 'Keep writing summary',
       duration: 240
@@ -40,7 +41,7 @@ const monday = [
     }
   ];
   
-  const tasks = monday.concat(tuesday);
+const tasks = monday.concat(tuesday);
 
 let sum = 0;
 
@@ -50,5 +51,6 @@ for (let i = 0; i < tasks.length; i++) {
     }
   }  
  
-let totalEarnings = ((sum / 60) * 14)*100;
+let totalEarnings = ((sum / 60) * 14) * 100;
+
 console.log('Maartje has earned €' + Math.round(totalEarnings)/100);  
