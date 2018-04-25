@@ -50,5 +50,5 @@ for (let i = 0; i < tasks.length; i++) {
     }
   }  
  
-let totalearnings = ((sum / 60) * 14)*100;
-console.log('Maartje has earned €' + Math.round(totalearnings)/100);  
+let totalEarnings = ((sum / 60) * 14)*100;
+console.log('Maartje has earned €' + Math.round(totalEarnings)/100);  
