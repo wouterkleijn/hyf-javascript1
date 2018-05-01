@@ -43,14 +43,15 @@ const tuesday = [
 
 const tasks = monday.concat(tuesday);
 
-let sum = 0;
+const perHourSalary = 25;
+
+let totalWorkHours = 0;
 
 for (let i = 0; i < tasks.length; i++) {
-  if (tasks[i].duration > 119) {
-    sum = sum + tasks[i].duration;
+  if (tasks[i].duration >= 120) {
+    totalWorkHours += tasks[i].duration / 60;
   }
 }
 
-const totalEarnings = ((sum / 60) * 14) * 100;
-
-console.log('Maartje has earned €' + Math.round(totalEarnings) / 100);  
+const totalSalary = totalWorkHours * perHourSalary;
+console.log('Maartje has earned ' + '€' + totalSalary.toFixed(2));

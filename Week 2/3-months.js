@@ -19,15 +19,15 @@ for (let i = 0; i < months.length; i++) {
   console.log(months[i].name, 'has', months[i].days, 'days');
 }
 
-let sum = 0;
+let totalNumberOfDays = 0;
 
 for (let i = 0; i < months.length; i++) {
-  sum = sum + months[i].days;
+  totalNumberOfDays = totalNumberOfDays + months[i].days;
 }
 
-console.log(sum);
+console.log(totalNumberOfDays);
 
-if (sum === 365) {
+if (totalNumberOfDays === 365) {
   console.log('Yep, it adds up to 365');
 } else {
   console.log('Oh no! It doesn\'t add up to 365!');
